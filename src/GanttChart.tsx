@@ -18,7 +18,6 @@ const GanttChart: React.FC<GanttChartProps> = ({ tasks }) => {
   const [currentWeek, setCurrentWeek] = useState<Date>(new Date(2024, 8, 15));
   const tooltipRef = useRef<HTMLDivElement | null>(null);
 
-  console.log(tasks);
   useEffect(() => {
     if (!tasks || tasks.length === 0) return;
 
